@@ -1,0 +1,103 @@
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan
+$ git init
+Initialized empty Git repository in C:/Users/Amaro/OneDrive/Escritorio/16_08_2023_AlexanderGavilan/.git/
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (master)
+$ git add .
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (master)
+$ git commit -m "commit 0 Jeisson Gavilan"
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (master)
+$ git branch -M main
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (main)
+$ git remote add origin git@github.com:Alexander206/16_08_2023_AlexanderGavilan.git
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:Alexander206/16_08_2023_AlexanderGavilan.git'
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:Alexander206/16_08_2023_AlexanderGavilan.git'
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (main)
+$ touch main.js index.html
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (main)
+$ git add .
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (main)
+$ git commit -m "commit 1 Jeisson Gavilan"
+[main (root-commit) 02b5306] commit 1 Jeisson Gavilan
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Alexander206/16_08_2023_AlexanderGavilan.git
+ * [new branch]      main -> main
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (main)
+$ git branch feature
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (feature)
+$ mkdir Hardware Software SeguridadInformatica
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (feature)
+$ touch ./Hardware/resumen.txt ./SeguridadInformatica/resumen.txt ./Software/resumen.txt
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (feature)
+$ git add .
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (feature)
+$ git commit -m "commit 2 Jeisson Gavilan"
+[feature 0920188] commit 2 Jeisson Gavilan
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 382 bytes | 382.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Alexander206/16_08_2023_AlexanderGavilan/pull/new/feature
+remote:
+To github.com:Alexander206/16_08_2023_AlexanderGavilan.git
+ * [new branch]      feature -> feature
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (feature)
+$ git checkout main
+Switched to branch 'main'
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (main)
+$ mv main.js resumenHardware.txt ; mv index.html resumenSoftware.txt
+
+Amaro@Alex_Desktop MINGW64 ~/OneDrive/Escritorio/16_08_2023_AlexanderGavilan (main)
+$ touch comandos.txt
